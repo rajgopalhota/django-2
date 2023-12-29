@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "packages": "npm install && pip install -r requirements.txt",
-    "dev": "python manage.py runserver",
+    "install": "pip install -r requirements.txt",
+    "packages-u": "pip freeze > requirements.txt",
+    "start": "python manage.py runserver",
     "migrate": "python manage.py migrate",
     "makemigrations": "python manage.py makemigrations",
     "createsuperuser": "python manage.py createsuperuser",
@@ -17,6 +18,6 @@
     "shell_plus": "python manage.py shell_plus"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "RAJGOPAL HOTA",
+  "license": "MIT"
 }
